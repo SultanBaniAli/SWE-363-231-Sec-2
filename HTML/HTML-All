@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Family Products">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Sultan BniAli">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أسرتي</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <main>
+    <h1>Welcome</h1>
+    <img src="family.jpeg" alt="">
+    <h2>Brief Intro</h2>
+    <p>My website well provide <em>family products</em> to the eastern region</p>
+    <p>
+        Our family of products is designed to meet the needs of everyone in your household. 
+        Whether you're looking for items to enhance your home, make your daily routines more convenient,
+        or simply add a touch of style, we have you covered. From <em class="the_most_important">kitchen gadgets</em> that simplify meal prep 
+        to cozy home furnishings that create a warm and inviting atmosphere, our diverse range of products
+        ensures that every member of your family can find something they love.
+        Explore our collection today and discover the perfect additions to your family's life.
+    </p>
+    <p class="first-letter-x-large">This is a text element.</p>
+    <ul>
+        <li> <a href="#"> Contact us</a></li>
+    </ul>
+    <table>
+        <tr class="top">
+            <th>Hoppy </th>
+            <th>Rank </th>
+            <th>When </th>
+            <th>Why </th>
+        </tr>
+        <tr>
+            <td> Coding </td>
+            <td> #1 </td>
+            <td> Every night </td>
+            <td> Makes amazing products </td>
+        </tr>
+        <tr>
+            <td> Tennis </td>
+            <td> #2 </td>
+            <td> Every evening </td>
+            <td> Stay in shape & socialize </td>
+        </tr>
+        <tr>    
+            <td> Reading </td>
+            <td> #3 </td>
+            <td> Every morning </td>
+            <td> Tap into other people's minds </td>
+        </tr>
+    </table>
+    </main>
+    
+        <form action="">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="message" required><br/>
+            <label for="email">Email</label>
+            <input type="email" name="name" id="name">
+            <br>
+            <label for="sex">Gender</label>
+            <select name="gender-type" id="gender-type">
+                <option value=""></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br>
+            <label for="rate">Rate our website</label>
+            <textarea name="" id="" cols="10" rows="1"></textarea>
+            <br>
+            <input type="submit" name="submit" id="submit">
+        </form>
+        <div>
+            Discount
+        </div>
+    <footer>
+        <p>&copy; <a href="">Contact</a></p>
+    </footer>
+    <div class="mood-board">
+        <div class="mood-item">
+            <img src="calendar.png" alt="Image 1">
+        </div>
+        <div class="mood-item">
+            <img src="airtag.png" alt="Image 2">
+        </div>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="HTML-Ex2.html">Home</a></li>
+                <li><a href="HTML-Ex2.html">About</a></li>
+                <li><a href="HTML-Ex2.html">Services</a></li>
+                <li><a href="HTML-Ex2.html">Portfolio</a></li>
+            </ul>
+        </nav>
+</body>
+</html>
