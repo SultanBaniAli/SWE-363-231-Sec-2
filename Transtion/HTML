@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Transtion.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="">
+                <img src="Logo.png" alt="" height = "100px">
+            </a>
+        </div>
+        <div class="navigation">
+            <input type="checkbox" name="" id="" class="toggle-menu">
+            <div class="hamburger"></div>
+            <ul class="menu">
+                <li><a href="">Menu</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Settings</a></li>
+                <li><a href="">Log out</a></li>
+
+            </ul>
+        </div>
+    </header>
+    <button class="my-button">Button</button>
+</body>
+</html>
