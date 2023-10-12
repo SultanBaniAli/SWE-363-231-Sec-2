@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Family Products">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Sultan BniAli">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أسرتي</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td,th{
+            border: solid #ccc  2px ;
+            text-align: center;
+            padding: 8px;
+        }
+        form{
+            border:solid black thin;
+            border-radius :5px;
+            padding: 8px;
+        }
+        
+    
+            
+        
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Welcome</h1>
+    <img src="family.jpeg" alt="">
+    <p>My website well provide family products to the eastern region</p>
+    <ul>
+        <li> <a href="#"> Contact us</a></li>
+    </ul>
+    <table>
+        <tr>
+            <th>Hoppy </th>
+            <th>Rank </th>
+            <th>When </th>
+            <th>Why </th>
+        </tr>
+        <tr>
+            <td> Coding </td>
+            <td> #1 </td>
+            <td> Every night </td>
+            <td> Makes amazing products </td>
+        </tr>
+        <tr>
+            <td> Tennis </td>
+            <td> #2 </td>
+            <td> Every evening </td>
+            <td> Stay in shape & socialize </td>
+        </tr>
+        <tr>    
+            <td> Reading </td>
+            <td> #3 </td>
+            <td> Every morning </td>
+            <td> Tap into other people's minds </td>
+        </tr>
+    </table>
+    </main>
+    
+        <form action="">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="" required><br/>
+            <label for="email">Email</label>
+            <input type="email" name="name" id="name">
+            <br>
+            <label for="sex">Gender</label>
+            <select name="gender-type" id="gender-type">
+                <option value=""></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br>
+            <label for="rate">Rate our website</label>
+            <textarea name="" id="" cols="10" rows="1"></textarea>
+            <br>
+            <input type="submit" name="submit" id="submit">
+        </form>
+        <div>
+            Discount
+        </div>
+    <footer>
+        <p>&copy; <a href="">Contact</a></p>
+    </footer>
+</body>
+</html>
