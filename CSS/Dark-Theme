@@ -1,0 +1,51 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td,th{
+    border: solid #ccc  2px ;
+    text-align: center;
+    padding: 8px;
+}
+form{
+    border:solid black thin;
+    border-radius :5px;
+    padding: 8px;
+}
+/* Define a dark background color for the body */
+body {
+    background-color: #333;
+    color: #fff; /* Set text color to white */
+  }
+  
+  /* Style links */
+  a {
+    color: #66b2ff; /* Link color in dark theme */
+  }
+  
+  /* Style headings */
+  h1, h2, h3 {
+    color: #fff; /* Heading text color */
+  }
+  
+  /* Define a dark color for containers */
+  .container {
+    background-color: #444;
+    border: 1px solid #666;
+    color: #fff; /* Text color in containers */
+  }
+  
+  /* Style buttons */
+  .button {
+    background-color: #66b2ff; /* Button background color in dark theme */
+    color: #fff; /* Button text color */
+  }
+  
+  /* Define a dark color for input fields */
+  input{
+    background-color: #444;
+    color: #fff; /* Text color in input fields */
+  }
+  
+  /* Style other elements as needed */
+  
