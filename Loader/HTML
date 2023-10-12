@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader Example</title>
+    <link rel="stylesheet" href="Loader.css">
+</head>
+<body>
+    <button id="startButton">Start Loading</button>
+    <div class="loader" id="loader"></div>
+</body>
+<script src="Loader.js"></script>
+</html>
