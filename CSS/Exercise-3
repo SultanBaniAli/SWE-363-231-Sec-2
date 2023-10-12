@@ -1,0 +1,172 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+/* class of the header */
+.top{
+    background-color: #FFD700;
+}
+td,th{
+    border: solid #ccc  2px ;
+    text-align: center;
+    padding: 8px;
+    color: #333;
+}
+form{
+    border:solid black thin;
+    border-radius :5px;
+    padding: 8px;
+}
+/* Define a dark background color for the body */
+body {
+    background-color: #333;
+    color: #fff; /* Set text color to white */
+    
+  }
+  
+  /* Style links */
+  a {
+    color: green; /* Link color in dark theme */
+  }
+  
+  /* Style headings */
+  h1{
+    color: #fff; /* Heading text color */
+    text-transform: uppercase;
+  }
+  
+  /* Define a dark color for containers */
+  .container {
+    background-color: #444;
+    border: 1px solid #666;
+    color: #fff; /* Text color in containers */
+  }
+  
+  /* Style buttons */
+  .button {
+    background-color: #66b2ff; /* Button background color in dark theme */
+    color: #fff; /* Button text color */
+  }
+  
+  /* Define a dark color for input fields */
+  input{
+    background-color: #444;
+    color: #fff; /* Text color in input fields */
+    height: 20px;
+    border-color: lightgray;
+}
+input[name ="message"]{
+    height: 50px;
+}
+
+.mood-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between mood items */
+    padding: 20px;
+    background-color: #333;/* Background color of the mood board */
+}
+
+/* Style each mood item */
+.mood-item {
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+/* Style images within mood items */
+.mood-item img {
+
+    object-fit: cover; /* Maintain aspect ratio while covering the mood item */
+}  
+/* changing the background color of em */
+em{
+    background-color: blue;
+}
+/* Class of 2nd em  */
+.the_most_important{
+    background-color:gold;
+    color: #333;
+    text-transform: uppercase;
+}
+/* changing font of h2 */
+h2{
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+/* Apply x-large font size to the first letter of an element with a class named "first-letter-x-large" */
+.first-letter-x-large::first-letter {
+    font-size: x-large;
+}
+  /* Change the background color of table rows on hover */
+table td:hover {
+    background-color:white
+     /* Change this color to your desired hover color */
+}
+table th:hover {
+    background-color:white
+     /* Change this color to your desired hover color */
+}
+nav {
+    background-color: #333;
+    padding: 10px 0;
+
+
+}
+a:hover {
+    color: #66b2ff;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li:first-child a {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none; /* Remove underlines from all links */
+    color: #fff;
+  }
+
+tbody tr:nth-child(even) {
+    background-color: lightblue; /* Background color for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: gold; /* Background color for odd rows */
+}
+::selection {
+    background-color: white; /* Change this color to your preferred highlight color */
+    color: #000; /* Change this color to your preferred text color in the highlight */
+}
+body a:hover {
+    cursor: pointer;
+}
+.Figma{
+    color: white;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 113.5%; /* 576.809px */
+}
+/* Define the initial button style */
+.my-button {
+    background-color: #3498db; /* Initial background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+/* Define the hover state for the button */
+.my-button:hover {
+    background-color: #2980b9; /* New background color on hover */
+}
