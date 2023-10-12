@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Family Products">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Sultan BniAli">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أسرتي</title>
+    <link rel="stylesheet" href="Css-Ex3.css">
+</head>
+<body>
+    <main>
+    <h1>مرحباً</h1>
+    <img src="family.jpeg" alt="">
+    <h2>مقدمة موجزة</h2>
+    <p class =  "Figma" >موقع الويب الخاص بي يقدم بشكل جيد <em>منتجات عائلية</em> الى المنطقة الشرقية</p>
+    <p>
+        تم تصميم مجموعة منتجاتنا لتلبية احتياجات كل فرد في منزلك. سواء كنت تبحث عن عناصر لتحسين منزلك، أو جعل روتينك اليومي أكثر ملاءمة، أو ببساطة إضافة لمسة من الأناقة، فلدينا كل ما تحتاجه. بدءًا من أدوات المطبخ التي تبسط إعداد الوجبات وحتى المفروشات المنزلية المريحة التي تخلق جوًا دافئًا وجذابًا، تضمن مجموعتنا المتنوعة من المنتجات
+        أن يتمكن كل فرد من أفراد عائلتك من العثور على شيء يحبه. استكشف مجموعتنا اليوم واكتشف
+        الإضافات المثالية لحياة عائلتك.</p>
+    <p class="first-letter-x-large">هذا هو عنصر النص.</p>
+    <ul>
+        <li> <a href="#"> اتصل بنا</a></li>
+    </ul>
+    <table>
+        <tr class="top">
+            <th>هوبي </th>
+            <th>رتبة </th>
+            <th>متى </th>
+            <th>لماذا </th>
+        </tr>
+        <tr>
+            <td> كتابة الاكواد </td>
+            <td> #1 </td>
+            <td> كل ليلة </td>
+            <td> يصنع منتجات مذهلة </td>
+        </tr>
+        <tr>
+            <td> تنس </td>
+            <td> #2 </td>
+            <td>كل مساء  </td>
+            <td> البقاء في الشكل والتواصل الاجتماعي </td>
+        </tr>
+        <tr>    
+            <td> القراءة </td>
+            <td> #3 </td>
+            <td> كل صباح </td>
+            <td> الاستفادة من عقول الآخرين </td>
+        </tr>
+    </table>
+    </main>
+    
+        <form action="">
+            <label for="name">الاسم كامل</label>
+            <input type="text" id="name" name="message" required><br/>
+            <label for="email">البريد الالكتروني</label>
+            <input type="email" name="name" id="name">
+            <br>
+            <label for="sex">الجنس</label>
+            <select name="gender-type" id="gender-type">
+                <option value=""></option>
+                <option value="male">ذكر</option>
+                <option value="female">انثى</option>
+            </select>
+            <br>
+            <label for="rate">قيم موقعنا</label>
+            <textarea name="" id="" cols="10" rows="1"></textarea>
+            <br>
+            <input type="submit" name="submit" id="submit">
+        </form>
+        <div>
+            خصم
+        </div>
+    <footer>
+        <p>&copy; <a href="">التواصل</a></p>
+    </footer>
+    <div class="mood-board">
+        <div class="mood-item">
+            <img src="calendar.png " alt="Image 1">
+        </div>
+        <div class="mood-item">
+            <img src="airtag.png " alt="Image 2">
+        </div>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="HTML-Ex2.html">الرئيسيه</a></li>
+                <li><a href="HTML-Ex2.html">عن موقعنا</a></li>
+                <li><a href="HTML-Ex2.html">خدمات</a></li>
+                <li><a href="HTML-Ex2.html">ملف</a></li>
+            </ul>
+        </nav>
+</body>
+</html>
