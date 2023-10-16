@@ -1,0 +1,49 @@
+const player1 = document.querySelector('#player1 .grid');
+const player2 = document.querySelector('#player2 .grid');
+const reset = document.querySelector('#reset');
+
+let currentPlayer = 'player1';
+
+// Create grids for players
+for(let i=0; i<25; i++) {
+  player1.innerHTML += '<div></div>';
+  player2.innerHTML += '<div></div>';
+}
+
+// Place ships randomly
+function placeShips(player) {
+  for(let i=0; i<3; i++) {
+    let divs = player.querySelectorAll('div');
+    let index = Math.floor(Math.random() * divs.length);
+    divs[index].classList.add('ship');
+  }
+}
+
+placeShips(player1);
+placeShips(player2);
+
+// Handle cell click
+function cellClick(e) {
+  if(e.target.classList.contains('ship')) {
+    e.target.style.backgroundColor = 'red';
+    e.target.classList.remove('ship');
+  } else {
+    e.target.style.backgroundColor = 'gray';
+  }
+
+  let shipsRemaining = document.querySelectorAll(`#${currentPlayer} .ship`).length;
+  if(shipsRemaining === 0) {
+    alert(`${currentPlayer} wins!`);
+  }
+
+  // Switch turns
+  currentPlayer = currentPlayer === 'player1' ? 'player2' : 'player1';
+}
+
+player1.addEventListener('click', cellClick);
+player2.addEventListener('click', cellClick);
+
+// Reset game
+reset.addEventListener('click', () => {
+  location.reload();
+});
