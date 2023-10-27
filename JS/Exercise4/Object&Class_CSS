@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#articles {
+    width: 80%;
+    margin: auto;
+}
+
+.article {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.article h2 {
+    margin: 0 0 10px 0;
+}
+
+.article p {
+    margin: 0;
+}
+
+.article .author {
+    font-weight: bold;
+    margin-top: 10px;
+}
