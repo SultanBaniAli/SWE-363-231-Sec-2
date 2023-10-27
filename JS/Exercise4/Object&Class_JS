@@ -1,0 +1,42 @@
+class User {
+  constructor(id, name, email) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+  }
+}
+
+class Article {
+  constructor(id, title, content, author) {
+    this.id = id;
+    this.title = title;
+    this.content = content;
+    this.author = author; // This will be a User object
+  }
+}
+
+// Create some users
+let user1 = new User(1, "John Doe", "john.doe@example.com");
+let user2 = new User(2, "Jane Doe", "jane.doe@example.com");
+
+// Create some articles
+let article1 = new Article(1, "First Article", "This is the first article.", user1);
+let article2 = new Article(2, "Second Article", "This is the second article.", user2);
+
+let articles = [article1, article2];
+
+articles.forEach(article => {
+  // Create a new div element for each article
+  let articleDiv = document.createElement('div');
+  articleDiv.className = 'article';
+
+  // Set the HTML content of the div
+  articleDiv.innerHTML = `
+    <h2>${article.title}</h2>
+    <p>${article.content}</p>
+    <p class="author">Author: ${article.author.name}</p>
+  `;
+
+  // Append the div to the articles div
+  document.getElementById('articles').appendChild(articleDiv);
+});
