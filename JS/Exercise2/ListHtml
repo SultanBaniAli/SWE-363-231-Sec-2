@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Blog Posts</title>
+</head>
+<body>
+    <script>
+        let blogPosts = [
+            {
+                title: "Post 1",
+                content: "This is the content for post 1."
+            },
+            {
+                title: "Post 2",
+                content: "This is the content for post 2."
+            },
+            {
+                title: "Post 3",
+                content: "This is the content for post 3."
+            }
+        ];
+
+        function addBlogPost(post) {
+            // Create a new div element
+            let newDiv = document.createElement("div");
+
+            // Create title element and add it to the div
+            let titleElement = document.createElement("h2");
+            titleElement.textContent = post.title;
+            newDiv.appendChild(titleElement);
+
+            // Create content element and add it to the div
+            let contentElement = document.createElement("p");
+            contentElement.textContent = post.content;
+            newDiv.appendChild(contentElement);
+
+            // Add the div to the DOM
+            document.body.appendChild(newDiv);
+        }
+
+        for (let i = 0; i < blogPosts.length; i++) {
+            addBlogPost(blogPosts[i]);
+        }
+    </script>
+</body>
+</html>
