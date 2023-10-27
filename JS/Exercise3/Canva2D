@@ -1,0 +1,58 @@
+<div id="signature-pad">
+  <canvas></canvas>
+  <button id="submit-signature">Submit Signature</button>
+</div>
+## This is an html feature
+// This is an JS feature
+// get references to the canvas element and its context
+var canvas = document.querySelector('#signature-pad canvas');
+var ctx = canvas.getContext('2d');
+
+// the following variables are to keep track of the drawing state
+var drawing = false;
+var mousePos = { x:0, y:0 };
+var lastPos = mousePos;
+
+// the following function starts recording the drawing
+canvas.addEventListener('mousedown', function (e) {
+    drawing = true;
+    lastPos = getMousePos(canvas, e);
+}, false);
+
+// the following function keeps track of the mouse's position
+canvas.addEventListener('mousemove', function (e) {
+    mousePos = getMousePos(canvas, e);
+}, false);
+
+// the following function stops recording the drawing
+canvas.addEventListener('mouseup', function () {
+    drawing = false;
+}, false);
+
+// the following function returns the current mouse position
+function getMousePos(canvasDom, mouseEvent) {
+    var rect = canvasDom.getBoundingClientRect();
+    return {
+      x: mouseEvent.clientX - rect.left,
+      y: mouseEvent.clientY - rect.top
+    };
+}
+
+// the following function records and draws the lines
+function renderCanvas() {
+    if (drawing) {
+        ctx.moveTo(lastPos.x, lastPos.y);
+        ctx.lineTo(mousePos.x, mousePos.y);
+        ctx.stroke();
+        lastPos = mousePos;
+    }
+}
+
+// call the renderCanvas function every 30 milliseconds
+setInterval(renderCanvas, 30);
+
+// submit the signature as a base64 encoded PNG image
+document.getElementById('submit-signature').addEventListener('click', function () {
+    var dataUrl = canvas.toDataURL(); // this contains the base64 image
+    // perform the AJAX request to the server with the image data
+}, false);
