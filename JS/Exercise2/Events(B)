@@ -1,0 +1,61 @@
+const player1 = document.querySelector('#player1 .grid');
+const player2 = document.querySelector('#player2 .grid');
+const reset = document.querySelector('#reset');
+
+let currentPlayer = 'player1';
+let currentPos = { player1: 0, player2: 0 };
+let gridSize = 5;
+
+// Create grids for players
+for(let i=0; i<gridSize*gridSize; i++) {
+  player1.innerHTML += '<div></div>';
+  player2.innerHTML += '<div></div>';
+}
+
+// Place cursor at start of each grid
+player1.querySelector('div').classList.add('cursor');
+player2.querySelector('div').classList.add('cursor');
+
+// Place ships randomly
+//... rest of the code ...
+
+// Move cursor
+function moveCursor(player, dir) {
+  let divs = player.querySelectorAll('div');
+
+  // Remove current cursor
+  divs[currentPos[currentPlayer]].classList.remove('cursor');
+
+  if(dir === 'up') currentPos[currentPlayer] -= gridSize;
+  if(dir === 'down') currentPos[currentPlayer] += gridSize;
+  if(dir === 'left') currentPos[currentPlayer] -= 1;
+  if(dir === 'right') currentPos[currentPlayer] += 1;
+
+  // Check for out of bounds
+  if(currentPos[currentPlayer] < 0) currentPos[currentPlayer] = 0;
+  if(currentPos[currentPlayer] >= gridSize*gridSize) currentPos[currentPlayer] = gridSize*gridSize - 1;
+
+  // Add cursor to new position
+  divs[currentPos[currentPlayer]].classList.add('cursor');
+}
+
+// Handle cell click
+//... rest of the code ...
+
+// Handle key press
+document.addEventListener('keydown', function(e) {
+  let player = currentPlayer === 'player1' ? player1 : player2;
+  
+  if(e.key === 'w' || e.key === 'ArrowUp') moveCursor(player, 'up');
+  if(e.key === 'a' || e.key === 'ArrowLeft') moveCursor(player, 'left');
+  if(e.key === 's' || e.key === 'ArrowDown') moveCursor(player, 'down');
+  if(e.key === 'd' || e.key === 'ArrowRight') moveCursor(player, 'right');
+
+  if(e.key === 'Enter') cellClick({ target: player.querySelectorAll('div')[currentPos[currentPlayer]] });
+  if(e.key === 'r') location.reload();
+});
+
+// Reset game
+reset.addEventListener('click', () => {
+  location.reload();
+});
