@@ -1,0 +1,25 @@
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+const responses = {
+    'How are you?': 'I am a bot, I do not have feelings',
+    'What is your name?': 'My name is Bot',
+    // Add more predefined questions and answers here
+};
+
+const prompt = () => {
+    rl.question('User: ', (input) => {
+        if (input === 'exit' || input === 'quit') {
+            rl.close();
+        } else {
+            console.log('Bot: ', responses[input] || 'I do not understand the question');
+            prompt();
+        }
+    });
+};
+
+prompt();
