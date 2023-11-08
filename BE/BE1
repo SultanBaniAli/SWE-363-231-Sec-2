@@ -1,0 +1,18 @@
+•	Website: Wikipedia (https://en.wikipedia.org/)
+
+•	Developer tools:
+
+o	IP address of the server host: 91.198.174.192
+o	Number of HTTP(S) requests made: 71
+o	Different types returned from all of the requests:
+o	text/html
+o	text/css
+o	image/jpeg
+o	image/png
+o	image/svg+xml
+o	application/javascript
+o	application/octet-stream
+•	Largest file returned: wikipedia.org/static/wikipedia/wmf/html/common/images/sprite-v2.svg (135.9 KB)
+•	Time taken: 1.24 seconds
+•	
+•	 
