@@ -1,0 +1,20 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const router = require('./routes');
+const app = express();
+const port = 3000;
+
+// Use body-parser middleware to parse form data
+app.use(bodyParser.urlencoded({extended: false}));
+
+app.use('/', router);
+
+// Handle form submission
+app.post('/submit-form', (req, res) => {
+  console.log(req.body);
+  res.send('Form submission received!');
+});
+
+app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`);
+});
