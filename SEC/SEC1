@@ -1,0 +1,30 @@
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Basic Authentication Function
+const basicAuth = (req, res, next) => {
+  const authHeader = req.headers['authorization'];
+  if (!authHeader) {
+    res.setHeader('WWW-Authenticate', 'Basic');
+    return res.sendStatus(401);
+  }
+  const base64Credentials = authHeader.split(' ')[1];
+  const credentials = Buffer.from(base64Credentials, 'base64').toString('ascii');
+  const [username, password] = credentials.split(':');
+
+  if (username === 'admin' && password === 'password') {
+    next();
+  } else {
+    res.sendStatus(403);
+  }
+};
+
+// Protect routes with basicAuth middleware
+app.use('/protected', basicAuth, (req, res) => {
+  res.send('You have accessed a protected route');
+});
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
+});
